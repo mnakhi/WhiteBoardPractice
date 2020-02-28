@@ -146,7 +146,9 @@ public class StringProblems {
         System.out.println(word);
     }
     // 12. Write a method that returns the number of words from a given string.
-
+    /*
+    same problem as #5
+     */
     // 13. Write a method that returns the number of words from a file.
     public int file() throws IOException {
         FileReader fileReader = null;
@@ -159,10 +161,12 @@ public class StringProblems {
             String data = "";
 
             while ((data = bufferedReader.readLine()) != null) {
-                System.out.println(data);
-                String[] word= data.split(" ");
-                for(int i = 0; i < word.length;i++){
-                    count = count+1;
+                if(data.length()>0) {
+                    System.out.println(data);
+                    String[] word = data.split("\\W+");
+                    for (int i = 0; i < word.length; i++) {
+                        count = count + 1;
+                    }
                 }
             }
         } catch (FileNotFoundException e) {

@@ -1,2 +1,6 @@
-Hello world
+Hello  world,
+
+
 we are working on file reader
+
+also checking if empty line is counted or not

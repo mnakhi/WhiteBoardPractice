@@ -40,11 +40,11 @@ public class Main {
         //System.out.println(problem2.con("Automation"));
         //System.out.println(problem2.firstThreeCharacters("Hello"));
         //problem2.concatenatingFirstNLastThreeChars("Automation");
-        //System.out.println(problem2.file());
+        System.out.println(problem2.file());
         //System.out.println(problem2.isPalindrome("Automation"));
         //System.out.println(problem2.hasDuplicateCharacters("property"));
         //System.out.println(problem2.isAnagram("cat","act"));
         //System.out.println(problem2.isAnagram("Tan","Ant"));
-        problem2.removeVowel("Animal");
+        //problem2.removeVowel("Happy");
     }
 }
