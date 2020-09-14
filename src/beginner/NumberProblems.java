@@ -22,7 +22,7 @@ public class NumberProblems {
     // 4. Write a method that returns the absolute value of an integer. (ex: -192 -> 192; 121 -> 121; -8 -> 8)
     public int absoluteValue(int number){
         if(number<0){
-            return number*(-1);
+            return Math.abs(number);
         }
         return number;
     }
@@ -32,6 +32,12 @@ public class NumberProblems {
             return number/10;
         }
         return (nonNegativeNumber(number/10));
+    }
+    public int firstDigitNonNegativeNumber(int number){
+        while(number>=10){
+            number/=10;
+        }
+        return number;
     }
     // 6. Write a method that returns the first digit of an integer. Do not incorporate String. (ex: 432 -> 4; -7819 -> 7)
     //by calling the nonNegativeNumber method

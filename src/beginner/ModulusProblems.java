@@ -63,12 +63,12 @@ public class ModulusProblems {
     // 8. Write a method that prints out foo if an integer is divisible by 3, prints out bar if an integer
     // is divisible by 5, and prints out foobar if an integer is divisible by both 3 and 5.
     public void isDivisibleBy3Or5(int number){
-        if(number%3==0){
-            System.out.println("foo");
+        if(number%3==0 && number%5==0){
+            System.out.println("foobar");
         }else if(number%5==0){
             System.out.println("bar");
-        }else if(number%3==0 && number%5==0){
-            System.out.println("foobar");
+        }else if(number%3==0){
+            System.out.println("foo");
         }else{
             System.out.println("neither divisible by 3 or 5");
         }
@@ -76,12 +76,12 @@ public class ModulusProblems {
     // 9. Similar to #8, but do it from range 1-X, where X is the upper bound.
     public void isDivisibleBy3Or5InRange(int upperBound){
         for(int i=1;i<=upperBound;i++){
-            if(i%3==0){
-                System.out.println(i+" "+"foo");
+            if(i%3==0 && i%5==0){
+                System.out.println(i+" "+"foobar");
             }else if(i%5==0){
                 System.out.println(i+" "+"bar");
-            }else if(i%3==0 && i%5==0){
-                System.out.println(i+" "+"foobar");
+            }else if(i%3==0){
+                System.out.println(i+" "+"foo");
             }else{
                 System.out.println(i+" "+"neither divisible by 3 or 5");
             }

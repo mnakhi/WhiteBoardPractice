@@ -76,6 +76,14 @@ public class StringProblems {
         }
     }
     // 7. Write a method that returns the last three characters of a given string. Be wary about an edge case.
+
+    /**
+     *
+     * @param word
+     * @return the last three characters of the word as a String
+     * declared an int variable count to keep track of the number of characters of the String
+     * declared and initialized an empty String variable partialWord to store the characters we read from the given word
+     */
     public String lastThreeCharacters(String word){
         int count = 0;
         String partialWord ="";
@@ -95,6 +103,15 @@ public class StringProblems {
         }
     }
     // 8. Write a method that concatenates the first and last three characters of a given string. Be wary about an edge case.
+
+    /**
+     * @param word
+     * assigned count1 to count the number of characters while reading the word forword
+     * assigned count2 to count the number of characters while reading the word backword
+     * initialized an empty string forward to use it later on to store characters by reading the word forward
+     * initialized another empty string called backword to use it later on to store characters by reading the word backword
+     * used StringBuilder to use the .reverse() method, so that we can read the characters in reverse order after finding the last three characters
+     */
     public void concatenatingFirstNLastThreeChars(String word){
         int count1 = 0;
         int count2=0;
@@ -224,4 +241,5 @@ public class StringProblems {
         }
         return false;
     }
+
 }

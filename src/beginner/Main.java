@@ -11,9 +11,10 @@ public class Main {
         //System.out.println("PLZ WORK");
         //test code here
         ModulusProblems problems = new ModulusProblems();
+        problems.isDivisibleBy3Or5InRange(20);
         //System.out.println(problems.isEven(6));
        // System.out.println(problems.isOddOrEven(7));
-        NumberProblems numberProblems = new NumberProblems();
+        //NumberProblems numberProblems = new NumberProblems();
         //System.out.println(numberProblems.onesPlace(190));
         //System.out.println(numberProblems.tensPlace(17));
         //System.out.println(numberProblems.hundredsPlace(3284));
@@ -39,12 +40,15 @@ public class Main {
         //System.out.println(problem2.lastThreeCharacters("Hello world"));
         //System.out.println(problem2.con("Automation"));
         //System.out.println(problem2.firstThreeCharacters("Hello"));
-        //problem2.concatenatingFirstNLastThreeChars("Automation");
-        System.out.println(problem2.file());
+        problem2.concatenatingFirstNLastThreeChars("Automation");
+        //System.out.println(problem2.file());
         //System.out.println(problem2.isPalindrome("Automation"));
         //System.out.println(problem2.hasDuplicateCharacters("property"));
-        //System.out.println(problem2.isAnagram("cat","act"));
+        System.out.println(problem2.isAnagram("cat","ac"));
         //System.out.println(problem2.isAnagram("Tan","Ant"));
         //problem2.removeVowel("Happy");
+        NumberProblems numberProblems = new NumberProblems();
+        //System.out.println(numberProblems.absoluteValue(-5));
+        //System.out.println(numberProblems.firstDigitNonNegativeNumber(134));
     }
 }
